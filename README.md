@@ -4,7 +4,7 @@
 
 > 社区插件，与 DeepSeek 官方无关。  
 > 逻辑移植自 [`canyueY/agent-gate`](https://github.com/canyueY/agent-gate)（AGPL-3.0-or-later）。  
-> 英文简版：[README.en.md](./README.en.md)
+> English: [README.en.md](./README.en.md)
 
 ## 为什么需要它
 
