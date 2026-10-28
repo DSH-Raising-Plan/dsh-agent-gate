@@ -1,13 +1,22 @@
-﻿{
+{
   "name": "dsh-agent-gate",
   "version": "0.1.0",
   "description": "DeepSeek Harness 权限闸门插件：风险分级、路径沙箱、调用限额、审计（fail-closed）",
-  "keywords": ["dsh", "dsh-plugin", "deepseek-harness", "permissions", "sandbox", "agent-gate"],
-  "homepage": "https://github.com/canyueY/dsh-agent-gate#readme",
-  "bugs": { "url": "https://github.com/canyueY/dsh-agent-gate/issues" },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "permissions",
+    "sandbox",
+    "agent-gate"
+  ],
+  "homepage": "https://github.com/DSH-Raising-Plan/dsh-agent-gate#readme",
+  "bugs": {
+    "url": "https://github.com/DSH-Raising-Plan/dsh-agent-gate/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/canyueY/dsh-agent-gate.git"
+    "url": "git+https://github.com/DSH-Raising-Plan/dsh-agent-gate.git"
   },
   "author": "canyueY",
   "license": "AGPL-3.0-or-later",
@@ -24,10 +33,13 @@
     "dsh.plugin.json",
     "README.md",
     "README.zh.md",
+    "README.en.md",
     "CHANGELOG.md",
     "LICENSE"
   ],
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "test": "node --test",
     "check": "node --check src/index.js && node --check src/gate.js && node --check src/tool-spec.js"
@@ -36,9 +48,13 @@
     "@deepseek-ai/dsh-tools": ">=0.1.0-rc.7"
   },
   "peerDependenciesMeta": {
-    "@deepseek-ai/dsh-tools": { "optional": true }
+    "@deepseek-ai/dsh-tools": {
+      "optional": true
+    }
   },
   "dsh": {
-    "bundle": { "patch": "./cordis.patch.yml" }
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
   }
 }
