@@ -1,0 +1,9 @@
+{
+  "name": "dsh-agent-gate",
+  "description": "Fail-closed permission gate for DeepSeek Harness: risk levels, path sandbox, rate limit, audit.",
+  "version": "0.1.0",
+  "entry": {
+    "name": "dsh-agent-gate",
+    "inject": ["tools"]
+  }
+}
